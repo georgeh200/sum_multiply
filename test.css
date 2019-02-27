@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  float:left;
+  width:25%;
+  align-content: center;
+  padding: 30px;
+}
+.box{
+  border-style: solid;
+  border-width: thin;
+  width: 150px;
+  height: 150px;
+  display: table;
+  margin: 0 auto;
+  padding: 10px;
+  align-content: center;
+}
+.inner{
+  display: table;
+  margin: 0 auto;
+}
+.input{
+  width:50px;
+}
+.value{
+  background: #0618f122;
+}
+.result{
+  background: #f106d422;
+}
+
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  .main {
+    width:50%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .main {
+    width:100%;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="test.js" type="text/javascript"></script>
+<link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+
+
+<div style="overflow:auto" id="app">
+
+
+  <div class="main" v-for="(value,index) in values">
+
+    <div class="box value">
+      <div class="inner">
+      <label>value {{index+1}}</label>
+      <input type="number" v-model="values[index]" class="input"/>
+    </div>
+    </div>
+  </div>
+
+
+
+  <div class="main">
+    <div class="box result">
+
+      <input type="radio" id="sum" value="1" v-model="operation">
+      <label for="sum">Sum</label>
+      <br>
+      <input type="radio" id="multiply" value="2" v-model="operation">
+      <label for="multiply">Multiply</label>
+      <br>
+      <label>Result:{{result}}</label>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
